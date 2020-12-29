@@ -16,8 +16,16 @@ const comments = [
 ];
 
 // is at least one person 19 or older
+// 최소 1명이라도 19세보다 나이가 많은 사람이 있나?
+people.some(element =>{
+    //console.log(2020 - element.year >= 19);
+});
 
 // is everyone 19 or older?
+// 모두 19세보다 많은가?
+people.every(element =>{
+    console.log(2020 - element.year >= 19);
+});
 
 // find the comment with the ID of 823423
 
