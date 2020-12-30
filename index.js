@@ -18,7 +18,7 @@ const comments = [
 // is at least one person 19 or older
 // 최소 1명이라도 19세보다 나이가 많은 사람이 있나?
 people.some(element =>{
-    //console.log(2020 - element.year >= 19);
+    console.log(2020 - element.year >= 19);
 });
 
 // is everyone 19 or older?
@@ -28,6 +28,12 @@ people.every(element =>{
 });
 
 // find the comment with the ID of 823423
-
 // Find the comment with this ID
+const result = comments.find(element => element.id = 823423);
+console.log(result);
+
 // delete the comment with the ID of 823423
+
+const result = comments.findIndex(element => element.id === 823423);
+const newResult = comments.splice(result);
+console.log(newResult);
